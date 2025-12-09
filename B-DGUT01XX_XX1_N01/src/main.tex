@@ -1,0 +1,85 @@
+\documentclass[
+    a4paper,
+    11pt,
+    bibliography=totoc,
+    listof=totoc,
+    parskip=half,
+    headings=normal
+]{scrbook}
+
+% ------------------------------------------------------------------------------
+% Packages
+% ------------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}     % German language support
+\usepackage[autostyle=true]{csquotes} % Context sensitive quotes
+\usepackage{lmodern}            % Modern font
+\usepackage{graphicx}           % Graphics support
+\usepackage{xcolor}             % Color support
+\usepackage{scrlayer-scrpage}   % Header and footer control
+
+% Bibliography setup
+\usepackage[
+    backend=biber,
+    style=authoryear,
+    sorting=nyt
+]{biblatex}
+\addbibresource{main.bib}
+
+% Hyperlinks (should be loaded last)
+\usepackage[
+    hidelinks,
+    breaklinks=true,
+    pdfauthor={Jan Kaczmarek},
+    pdftitle={Designgeschichte und -theorie},
+    pdfsubject={Kommunikationsdesign}
+]{hyperref}
+
+% ------------------------------------------------------------------------------
+% Document Start
+% ------------------------------------------------------------------------------
+\begin{document}
+
+\frontmatter
+
+% Title Page
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\scshape\LARGE Designgeschichte und -theorie\par}
+    \vspace{1.5cm}
+    {\huge\bfseries Von der Antike bis zur Neuzeit\par}
+    \vspace{2cm}
+    {\Large\itshape Jan Kaczmarek\par}
+    \vfill
+    Studiengang Kommunikationsdesign\par
+    \today\par
+\end{titlepage}
+
+\tableofcontents
+
+\mainmatter
+
+% ------------------------------------------------------------------------------
+% Content
+% ------------------------------------------------------------------------------
+
+\chapter{Einleitung}
+TODO
+
+\chapter{Hauptteil}
+TODO
+
+\section{Abschnitt}
+TODO
+
+
+\backmatter
+
+% ------------------------------------------------------------------------------
+% Bibliography
+% ------------------------------------------------------------------------------
+\printbibliography
+
+\end{document}
