@@ -1,0 +1,265 @@
+\documentclass[
+    a4paper,
+    11pt,
+    bibliography=totoc,
+    listof=totoc,
+    parskip=half,
+    headings=normal
+]{scrbook}
+
+% ------------------------------------------------------------------------------
+% Packages
+% ------------------------------------------------------------------------------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}     % German language support
+
+\usepackage[autostyle=true]{csquotes} % Context sensitive quotes
+\usepackage{lmodern}            % Modern font
+\usepackage{graphicx}           % Graphics support
+\usepackage{caption}            % Captions
+\usepackage{xcolor}             % Color support
+\usepackage{scrlayer-scrpage}   % Header and footer control
+
+% Bibliography setup
+\usepackage[
+    backend=biber,
+    style=verbose-ibid,
+    sorting=nty
+]{biblatex}
+\addbibresource{main.bib}
+
+% Hyperlinks (should be loaded last)
+\usepackage[
+    hidelinks,
+    breaklinks=true,
+    pdfauthor={Jan Kaczmarek},
+    pdftitle={Agiles Projektmanagement},
+    pdfsubject={Kommunikationsdesign}
+]{hyperref}
+
+% ------------------------------------------------------------------------------
+% Document Start
+% ------------------------------------------------------------------------------
+\begin{document}
+
+\frontmatter
+
+% Title Page
+\begin{titlepage}
+  \centering
+  \vspace*{2cm}
+  {\scshape\LARGE Agiles Projektmanagement\par}
+  \vspace{0.5cm}
+  {\large Einsendeaufgabe B-APMB01-XX3-N01\par}
+  \vspace{2cm}
+  {\Large\itshape Jan Kaczmarek\par}
+  \vfill
+  Studiengang Kommunikationsdesign\par
+  \today\par
+\end{titlepage}
+
+\tableofcontents
+
+\mainmatter
+
+% ==============================================================================
+% 1. Projektmanagement (40 Pkt.)
+% ==============================================================================
+\chapter{Projektmanagement}
+
+% ------------------------------------------------------------------------------
+% 1a) Projektbeschreibung, Expertise, Phasenplan (15 Pkt.)
+% ------------------------------------------------------------------------------
+\section{Projektbeschreibung, Expertise und Phasenplan}
+
+\subsection{Projektbeschreibung}
+Das vorliegende Vorhaben, der Einführung eines Softwaretools zur Digitalisierung von
+Geschäftsprozessen in einer mittelständischen Tischlerei, erfüllt alle wesentlichen
+Kriterien nach DIN~69\,901.
+\begin{itemize}
+  \item Einmaligkeit
+  \item Zielvorgabe
+  \item Begrenzung der verfügbaren Ressourcen
+  \item Abgrenzung gegenüber anderen Vorhaben
+  \item Projektspezifische Organisation
+\end{itemize}
+
+\subsubsection{Einmaligkeit}
+Die Digitalisierung der Geschäftsprozesse ist für die Tischlerei ein einmaliges,
+neuartiges Vorhaben, das sich grundlegend von der täglichen Routinearbeit im
+Handwerksbetrieb unterscheidet. Wie im Studienheft PRMA-H erläutert, hat ein Projekt
+im Gegensatz zur immer in gleicher Weise ablaufenden Routinearbeit einen hohen
+Neuigkeitsgrad.
+
+\subsubsection{Zielvorgabe}
+Die Anpassung und Einführung einer am Markt verfügbaren Software, um die bisher
+analog ablaufenden Verwaltungsprozesse der Tischlerei zu digitalisieren. Das
+Produkt -- im Sinne des Projektmanagements der Output des Projektes -- ist die
+erfolgreich implementierte und an die betrieblichen Bedürfnisse angepasste Software.
+Als sekundäre Ziele ergeben sich (a) die Zufriedenstellung der Kunden, welche sich
+zuvor über mangelnde Digitalisierung beschwert haben, und (b) die Effizienzsteigerung
+der betrieblichen Abläufe. Daraus~(b) ergeben sich potenziell positive Nebeneffekte,
+wie ein gesteigertes Betriebsklima.
+
+\subsubsection{Begrenzung der verfügbaren Mittel}
+
+\paragraph{Finanzielle Begrenzung}
+Kaufpreis der Software zuzüglich 10\,\% für die Anpassung sowie weitere 10\,\% für
+allgemeine Overhead-Kosten.
+
+\paragraph{Personelle Begrenzung}
+Personell ist das Projektteam begrenzt, da die Mitarbeitenden neben ihren
+Kernaufgaben im Tischlereibetrieb mitwirken müssen.
+
+\paragraph{Zeitliche Begrenzung}
+Eine zeitliche Begrenzung ergibt sich aus der finanziellen sowie der personellen
+Begrenzung. Eine rasche Umsetzung ist geboten, damit die Overhead-Kosten nicht ihr
+Limit übersteigen.
+
+\subsubsection{Abgrenzung und projektspezifische Organisation}
+Die Einführung der Software grenzt sich klar von den üblichen Abläufen in der
+Tischlerei ab. Neben einer inhaltlich anderen Domäne müssen die regulären Prozesse
+im Betrieb parallel weiterlaufen. Diese im Betrieb übliche Linienorganisation ist
+für die Steuerung eines solchen Vorhabens nicht geeignet. Das Projekt lässt sich als
+Organisationsprojekt mit Investitionscharakter einordnen, da sowohl organisatorische
+Veränderungen (Prozessdigitalisierung) als auch die Beschaffung und Anpassung der
+Software im Vordergrund stehen.
+
+\subsection{Notwendige Expertise der Mitarbeitenden}
+Das Fallbeispiel liefert keine detaillierten Informationen über die genaue Anzahl der
+Mitarbeitenden. Daher wird im Folgenden davon ausgegangen, dass die Tischlerei neben
+den Beschäftigten in der Werkstatt auch über Verwaltungspersonal verfügt. Zudem wird
+angenommen, dass sich das Kollegium aus verschiedenen Altersgruppen zusammensetzt,
+die sich hinsichtlich ihrer Vorkenntnisse im Umgang mit digitalen Produkten sowie
+ihrer Adaptionsfreudigkeit unterscheiden.
+
+Eine in der \textbf{Verwaltung angestellte Person} kennt die bestehenden Prozesse
+(Angebots-, Rechnungsstellung, Bestätigung, Kommunikation~\dots) im Detail und kann
+bewerten, wie diese von der Software abgebildet werden müssen.
+
+Eine in der \textbf{Werkstatt angestellte Person} vertritt die Perspektive der
+handwerklich tätigen Mitarbeitenden, die zukünftig ebenfalls mit dem System arbeiten
+werden (z.\,B. Materialbestellungen, Auftragsdaten abrufen). Es ist ratsam, hier die
+Expertise \textbf{einer jüngeren und einer älteren Person} zu unterscheiden. Während
+eine Auszubildende oder ein junger Geselle technisch affiner und potenziell weniger
+voreingenommen ist, bringt eine bereits lange in der Tischlerei arbeitende Person
+tiefes Verständnis für das Handwerk sowie die \enquote{gelebten} Prozesse mit.
+Außerdem können Akzeptanzprobleme durch die Mitbestimmung und -gestaltung bereits
+während der Integration des IT-Systems ausgeräumt werden.
+
+Der \textbf{externe Kundenbetreuer} der Software-Firma bringt Fachkenntnis zur
+Software, zu Anpassungsmöglichkeiten und zur Implementierung mit. Er fungiert als
+Schnittstelle zum Softwareanbieter, verfügt jedoch vermutlich nur über wenig Wissen
+über das Handwerk, was zu Verständnisproblemen führen kann.
+
+Der \textbf{externe Software-Entwickler} der Software-Firma ist für die technische
+Anpassung des Tools an die spezifischen Anforderungen der Tischlerei zuständig. Er
+verfügt ebenfalls vermutlich nur über wenig Wissen über das Handwerk.
+
+Der \textbf{Projektleiter (Meister)} bringt umfassendes Prozesswissen mit und kennt
+die Schwachstellen, die ihn dazu veranlasst haben, das Projekt anzustoßen. Gemeinsam
+mit seiner Digitalaffinität qualifiziert ihn dies für die Leitung des Projekts. Seine
+Aufgabe ist es, die Mitarbeitenden sach- und projektkundig anzuleiten und die
+Projektaufgabe zu strukturieren. Darüber hinaus dient er als Schnittstelle zur
+Softwarefirma.
+
+Optional kann der \textbf{Chef} eingebunden werden. Es wird angenommen, dass er
+sowohl über handwerkliche Expertise als auch über mindestens grundlegende
+betriebswirtschaftliche Kenntnisse verfügt. Damit wäre er ideal als Mitglied in
+einem Lenkungsausschuss geeignet, um die Durchführung zu überwachen, Prioritäten zu
+setzen und die Einhaltung des Budgets sicherzustellen.
+
+\subsection{Phasenplan mit Meilensteinen}
+
+
+% ------------------------------------------------------------------------------
+% 1b) Weitere Instrumente zur Projektplanung (10 Pkt.)
+% ------------------------------------------------------------------------------
+\section{Weitere Instrumente zur Projektplanung}
+
+\subsection{Überblick über Planungsinstrumente}
+
+\subsection{Geeignete Instrumente für dieses Projekt}
+
+
+% ------------------------------------------------------------------------------
+% 1c) Fortschrittsmonitoring (15 Pkt.)
+% ------------------------------------------------------------------------------
+\section{Fortschrittsmonitoring}
+
+\subsection{Methoden zur Beurteilung des Projektfortschritts}
+
+\subsection{Geeignete Methoden unter Berücksichtigung des Budget-Fokus}
+
+
+% ==============================================================================
+% 2. Psychologie des Projektmanagements (20 Pkt.)
+% ==============================================================================
+\chapter{Psychologie des Projektmanagements}
+
+% ------------------------------------------------------------------------------
+% 2a) Gründe für Projektorganisation (10 Pkt.)
+% ------------------------------------------------------------------------------
+\section{Gründe für die Projektorganisation}
+
+\subsection{Allgemeine Gründe}
+
+\subsection{Relevanz für das Fallbeispiel}
+
+
+% ------------------------------------------------------------------------------
+% 2b) Visualisierung in Projektbesprechungen (10 Pkt.)
+% ------------------------------------------------------------------------------
+\section{Gestaltung von Projektbesprechungen und Visualisierung}
+
+\subsection{Vor- und Nachteile der Visualisierung}
+
+\subsection{Geeignete Medien und Auswahl für dieses Projekt}
+
+
+% ==============================================================================
+% 3. Agiles Projektmanagement (40 Pkt.)
+% ==============================================================================
+\chapter{Agiles Projektmanagement}
+
+% ------------------------------------------------------------------------------
+% 3a) Klassisch vs. Agil (15 Pkt.)
+% ------------------------------------------------------------------------------
+\section{Klassische vs.\ agile Projektmanagementansätze}
+
+\subsection{Vor- und Nachteile des klassischen Ansatzes}
+
+\subsection{Vor- und Nachteile des agilen Ansatzes}
+
+\subsection{Entscheidung für dieses Projekt}
+
+
+% ------------------------------------------------------------------------------
+% 3b) Projektplanung nach Scrum (15 Pkt.)
+% ------------------------------------------------------------------------------
+\section{Projektplanung nach Scrum}
+
+\subsection{Bausteine von Scrum}
+
+\subsection{Projektablauf}
+
+
+% ------------------------------------------------------------------------------
+% 3c) Verteiltes Team und Kommunikation (10 Pkt.)
+% ------------------------------------------------------------------------------
+\section{Kommunikation im verteilten Projektteam}
+
+\subsection{Technische Mittel}
+
+\subsection{Besonders wichtige Aspekte der Zusammenarbeit}
+
+
+\backmatter
+
+% ------------------------------------------------------------------------------
+% Bibliography
+% ------------------------------------------------------------------------------
+\printbibliography
+
+\end{document}
