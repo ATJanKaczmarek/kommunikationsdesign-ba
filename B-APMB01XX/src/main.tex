@@ -28,10 +28,11 @@
 
 \usepackage[
     backend=biber,
-    style=authoryear,
+    style=authoryear-icomp,
+    autocite=footnote,
     sorting=nyt,
     maxcitenames=2,
-    ibidtracker=false
+    ibidtracker=true
 ]{biblatex}
 \addbibresource{main.bib}
 
@@ -106,15 +107,14 @@
 \subsection{Projektbeschreibung}
 
 Das vorliegende Digitalisierungsvorhaben in der Tischlerei erfüllt alle konstituierenden
-Merkmale eines Projekts nach DIN~69\,901 und dem Studienheft PRMA-H
-\parencite[vgl.][Kap.~1]{Mayer2014}: Einmaligkeit, Neuartigkeit des Vorhabens,
+Merkmale eines Projekts nach DIN~69\,901 und dem Studienheft PRMA-H\autocite[vgl.][Kap.~1]{Mayer2014}: Einmaligkeit, Neuartigkeit des Vorhabens,
 klare Zielvorgabe, zeitliche und budgetäre Begrenzung, interdisziplinäre
 Aufgabenstellung sowie die Notwendigkeit einer projektspezifischen Organisation,
 die sich von der bestehenden Linienorganisation abgrenzt. Der Digitalisierungsbedarf
 im deutschen Handwerk ist dabei kein Einzelfall: Laut einer gemeinsamen Studie des
 Digitalverbands Bitkom und des Zentralverbands des Deutschen Handwerks nutzen
 bereits 68~\% der Handwerksbetriebe in Deutschland digitale Technologien --
-gegenüber lediglich 45~\% im Jahr 2017 \parencite[vgl.][]{BitkomZDH2023}. Trotzdem
+gegenüber lediglich 45~\% im Jahr 2017\autocite[vgl.][]{BitkomZDH2023}. Trotzdem
 sehen 37~\% der Betriebe noch erhebliche Herausforderungen bei der konkreten
 Umsetzung. Dies unterstreicht die Relevanz eines strukturierten Projektvorgehens
 bei der Einführung betrieblicher Software.
@@ -134,7 +134,7 @@ parallel.
 
 \paragraph{Projekttyp}
 Das Vorhaben ist als \textit{Organisationsprojekt mit Investitionscharakter}
-einzuordnen \parencite[vgl.][Kap.~1]{Mayer2014}: Es geht einerseits um die
+einzuordnen\autocite[vgl.][Kap.~1]{Mayer2014}: Es geht einerseits um die
 Beschaffung und Anpassung einer Software (Investition), andererseits um die
 Veränderung betrieblicher Abläufe und Rollen (Organisationsentwicklung).
 
@@ -148,9 +148,9 @@ primäre Fachanwenderin/-anwender während der Testphase.
 \textbf{Werkstattmitarbeitende (je eine jüngere und eine erfahrene Person):} Die
 jüngere Person bringt Technikaffinität und Offenheit gegenüber Neuem ein; die
 erfahrene Person vertritt das gelebte Prozesswissen und senkt das Akzeptanzrisiko
-bei älteren Beschäftigten \parencite[vgl.][Kap.~3]{Kiefer2010}. Die
+bei älteren Beschäftigten\autocite[vgl.][Kap.~3]{Kiefer2010}. Die
 Mitbestimmung beider Gruppen ist entscheidend, da -- wie die Studie von
-\textcite{Sage2024} belegt -- kulturelle Widerstände innerhalb der Belegschaft
+Sage\autocite{Sage2024} belegt -- kulturelle Widerstände innerhalb der Belegschaft
 zu den häufigsten Hürden bei der Digitalisierung von KMU zählen.
 
 \textbf{Externer Kundenbetreuer (Softwarefirma):} Schnittstelle zum
@@ -174,8 +174,7 @@ ab.
 
 \subsection{Phasenplan mit Meilensteinen}
 
-Der Projektablauf gliedert sich in fünf sequenzielle Phasen
-\parencite[vgl.][Kap.~2]{Mayer2014}. Aufgrund der kompakten Budgetgrenze
+Der Projektablauf gliedert sich in fünf sequenzielle Phasen\autocite[vgl.][Kap.~2]{Mayer2014}. Aufgrund der kompakten Budgetgrenze
 (Overhead-Kosten laufen zeitproportional an) ist ein zügiger Durchlauf mit
 klaren Meilensteinen geboten.
 
@@ -221,33 +220,29 @@ klaren Meilensteinen geboten.
 
 Der Planungsablauf im klassischen Projektmanagement ist als iterativer Prozess
 konzipiert, der mit dem Projektstrukturplan beginnt und über Ablauf-, Termin-,
-Ressourcen- und Kostenplanung bis zur Realisierungsfreigabe führt
-\parencite[vgl.][Kap.~2]{Mayer2014}. Die Instrumente lassen sich in drei Gruppen
+Ressourcen- und Kostenplanung bis zur Realisierungsfreigabe führt\autocite[vgl.][Kap.~2]{Mayer2014}. Die Instrumente lassen sich in drei Gruppen
 gliedern:
 
 \paragraph{Leistungsbeschreibung}
 \textbf{Lastenheft und Pflichtenheft} bilden das vertragliche Fundament. Das
 Lastenheft dokumentiert die Anforderungen des Auftraggebers (\textit{was} das
 Projekt erreichen soll); das Pflichtenheft beschreibt aus Sicht des Auftragnehmers
-\textit{wie} und \textit{womit} die Anforderungen erfüllt werden
-\parencite[vgl.][Kap.~2]{Mayer2014}. Es muss vollständig und widerspruchsfrei sein,
+\textit{wie} und \textit{womit} die Anforderungen erfüllt werden\autocite[vgl.][Kap.~2]{Mayer2014}. Es muss vollständig und widerspruchsfrei sein,
 da es die verbindliche Grundlage für die anschließende Softwareanpassung bildet.
 
 \paragraph{Struktur- und Terminplanung}
 Der \textbf{Projektstrukturplan (PSP)} zergliedert das Gesamtvorhaben hierarchisch
 in Teilaufgaben und Arbeitspakete. Das Project Management Institute (PMI) definiert
 ihn als \enquote{deliverable-oriented hierarchical decomposition of the work to be
-      executed by the project team} \parencite[PMI, 2006, zit. n.][]{PMI2021}. Gemäß der
+      executed by the project team}\autocite[PMI, 2006, zit. n.][]{PMI2021}. Gemäß der
 sogenannten \textit{100-\%-Regel} muss der PSP 100~\% aller Projektarbeiten
 abdecken, sodass kein Arbeitspaket ober- oder unterhalb der Hierarchieebene verloren
-geht \parencite[vgl.][]{PMI_WBS2006}. Er ist der \enquote{Plan der Pläne}, aus dem
-Ablauf-, Termin-, Ressourcen- und Kostenplanung abgeleitet werden
-\parencite[vgl.][Kap.~2]{Mayer2014}.
+geht\autocite[vgl.][]{PMI_WBS2006}. Er ist der \enquote{Plan der Pläne}, aus dem
+Ablauf-, Termin-, Ressourcen- und Kostenplanung abgeleitet werden\autocite[vgl.][Kap.~2]{Mayer2014}.
 
 Die \textbf{Netzplantechnik} überführt die PSP-Vorgänge in logisch-zeitliche
 Abhängigkeiten und ermittelt früheste und späteste Start- und Endtermine sowie den
-kritischen Weg. Sie ist das leistungsfähigste Instrument zur Projektsteuerung
-\parencite[vgl.][Kap.~2]{Mayer2014}, erfordert jedoch erhöhten Methodenaufwand.
+kritischen Weg. Sie ist das leistungsfähigste Instrument zur Projektsteuerung\autocite[vgl.][Kap.~2]{Mayer2014}, erfordert jedoch erhöhten Methodenaufwand.
 
 Der \textbf{Balkenplan (Gantt-Diagramm)} überträgt die Terminplanung in eine
 kalendarische Darstellung. Er ermöglicht eine intuitiv lesbare Übersicht über
@@ -258,27 +253,25 @@ Projektkommunikation.
 Auf Basis des PSP werden im \textbf{Einsatzmittelplan} Personal, Betriebsmittel
 und Werkstoffe je Arbeitspaket quantifiziert; daraus entsteht der
 \textbf{Kostenplan}, der die Gesamtkosten phasenweise abbildet und als
-unveränderter Basisplan für die spätere Kostenkontrolle dient
-\parencite[vgl.][Kap.~2]{Mayer2014}.
+unveränderter Basisplan für die spätere Kostenkontrolle dient\autocite[vgl.][Kap.~2]{Mayer2014}.
 
 \subsection{Geeignete Instrumente für das Tischlerei-Projekt}
 
 \textbf{Lastenheft und Pflichtenheft} sind für dieses Projekt unverzichtbar. Die
 Anpassungsleistung der externen Softwarefirma ist nur dann budgetsicher kalkulierbar,
 wenn Anforderungen präzise dokumentiert sind. Mehrdeutigkeiten im Anforderungsumfang
-sind eine der häufigsten Ursachen für Kostensteigerungen bei KMU-Digitalisierungsprojekten \parencite[vgl.][]{MittelstandDigital2019}.
+sind eine der häufigsten Ursachen für Kostensteigerungen bei KMU-Digitalisierungsprojekten\autocite[vgl.][]{MittelstandDigital2019}.
 
 \textbf{Projektstrukturplan (PSP)}: Auch für ein Vorhaben dieser Größe ist ein PSP
 unabdingbar. Er schafft Transparenz über alle Arbeitspakete -- Anforderungsaufnahme,
 Softwareanpassung, Datenmigration, Schulung, Testbetrieb -- und legt Verantwortlichkeiten zwischen Tischlerei und Softwarefirma eindeutig fest. Studien zeigen, dass
 der PSP-Einsatz die Liefertreue und Kostentransparenz selbst in kleinen Projekten
-messbar verbessert \parencite[vgl.][]{PMI_WBS2006}.
+messbar verbessert\autocite[vgl.][]{PMI_WBS2006}.
 
 \textbf{Balkenplan (Gantt-Diagramm)}: Angesichts der heterogenen Teamzusammensetzung
 aus Handwerkspersonal, Verwaltungskräften und externen Dienstleistern ist der
 Balkenplan dem Netzplan vorzuziehen. Er ist ohne Methodikkenntnisse lesbar und eignet
-sich hervorragend als Kommunikationswerkzeug in Projektstatusbesprechungen
-\parencite[vgl.][Kap.~2]{Mayer2014}.
+sich hervorragend als Kommunikationswerkzeug in Projektstatusbesprechungen\autocite[vgl.][Kap.~2]{Mayer2014}.
 
 \textbf{Kostenplan}: Da der Chef explizit die Einhaltung des Kostenrahmens
 einfordert, ist ein detaillierter Kostenplan mit phasenweiser Soll-Vorgabe
@@ -289,8 +282,7 @@ Earned-Value-Analyse im Projektcontrolling (vgl. Abschnitt~1.3).
 \textbf{Netzplantechnik}: Für dieses Projekt wird die vollständige Netzplanberechnung
 nicht empfohlen. Das Vorhaben weist überschaubare Abhängigkeiten und keine
 parallelisierbaren Entwicklungsstränge auf, die eine kritischen-Weg-Analyse
-rechtfertigen würden. Der erhöhte Planungsaufwand stünde außer Verhältnis zum Nutzen
-\parencite[vgl.][Kap.~2]{Mayer2014}.
+rechtfertigen würden. Der erhöhte Planungsaufwand stünde außer Verhältnis zum Nutzen\autocite[vgl.][Kap.~2]{Mayer2014}.
 
 % ------------------------------------------------------------------------------
 % 1c) Fortschrittsmonitoring inkl. Kostenfokus (15 Pkt.)
@@ -300,7 +292,7 @@ rechtfertigen würden. Der erhöhte Planungsaufwand stünde außer Verhältnis z
 \subsection{Methoden zur Beurteilung des Projektfortschritts}
 
 Das Studienheft PRMA-H beschreibt mehrere aufeinander aufbauende Methoden der
-Projektkontrolle \parencite[vgl.][Kap.~3]{Mayer2014}:
+Projektkontrolle\autocite[vgl.][Kap.~3]{Mayer2014}:
 
 \paragraph{Überwachungsbalkenplan}
 Er stellt Soll-Terminverlauf (Basisplan, unveränderlich) und Ist-Verlauf
@@ -312,8 +304,7 @@ Die EVA ist die methodisch leistungsfähigste Methode der Projektüberwachung,
 weil sie Terminfortschritt und Kostenentwicklung integriert betrachtet. Auf Basis
 von drei Größen -- dem geplanten Wert (\textit{Planned Value, PV}), dem
 Fertigstellungswert (\textit{Earned Value, EV}) und den tatsächlichen Kosten
-(\textit{Actual Cost, AC}) -- lassen sich folgende Indikatoren berechnen
-\parencite[vgl.][S.~4\,ff.]{FlemingKoppelman2010}:
+(\textit{Actual Cost, AC}) -- lassen sich folgende Indikatoren berechnen\autocite[vgl.][S.~4\,ff.]{FlemingKoppelman2010}:
 
 \begin{itemize}[noitemsep]
       \item \textbf{Kostenabweichung (CV)}: $CV = EV - AC$ \ \
@@ -329,22 +320,20 @@ Fertigstellungswert (\textit{Earned Value, EV}) und den tatsächlichen Kosten
 Der entscheidende Vorteil gegenüber einem einfachen Kostenvergleich liegt darin,
 dass eine scheinbar günstige Kostenunterdeckung eine verdeckte Überschreitung
 sein kann, wenn der Leistungsfortschritt noch geringer ausfällt als der
-Kostenverbrauch. \textcite{Lukas2012} betont, dass ohne den Bezug auf den
+Kostenverbrauch. Lukas\autocite{Lukas2012} betont, dass ohne den Bezug auf den
 Fertigstellungswert selbst erfahrene Projektmanager die tatsächliche
 Projektgesundheit regelmäßig fehleinschätzen. Zudem wurde nachgewiesen, dass eine
 aktuelle CPI-Messung bereits ab 20~\% Projektfortschritt verlässliche Prognosen
-über die Gesamtkosten mit einer Abweichung von $\pm10$~\% ermöglicht
-\parencite[vgl.][]{FlemingKoppelman2010}.
+über die Gesamtkosten mit einer Abweichung von $\pm10$~\% ermöglicht\autocite[vgl.][]{FlemingKoppelman2010}.
 
 \paragraph{Meilenstein-Trendanalyse (MTA)}
 Die MTA visualisiert zu mehreren Berichtszeitpunkten, ob geplante Meilensteine
 als termingerecht oder verschoben einzustufen sind. Ein nach rechts wandernder
-Meilensteinpunkt signalisiert Verzug und erlaubt frühzeitige Steuerungsmaßnahmen
-\parencite[vgl.][Kap.~3]{Mayer2014}.
+Meilensteinpunkt signalisiert Verzug und erlaubt frühzeitige Steuerungsmaßnahmen\autocite[vgl.][Kap.~3]{Mayer2014}.
 
 \paragraph{Projektberichterstattung und Projektstatusbesprechung}
 Die Projektberichterstattung versorgt alle Beteiligten zielgruppengerecht mit
-Informationen \parencite[vgl.][Kap.~3]{Mayer2014}. Die Projektstatusbesprechung
+Informationen\autocite[vgl.][Kap.~3]{Mayer2014}. Die Projektstatusbesprechung
 ist das operative Koordinationsinstrument: Ist-Daten zu Terminen, Kosten und
 Technik werden gemeinsam ausgewertet, und Maßnahmen werden beschlossen.
 
@@ -359,15 +348,13 @@ methodisch stärkste Wahl, da sie -- anders als ein simpler Soll-Ist-Kostenvergl
 Softwareentwickler etwa 80~\% des vereinbarten Anpassungsbudgets verbraucht,
 aber erst 60~\% der Backlog-Items fertiggestellt hat, liegt eine tatsächliche
 Kostenüberschreitung vor, die ein reiner Kostenvergleich verbergen würde. Der
-Kostenplan aus der Planungsphase dient als unveränderter Basisplan
-\parencite[vgl.][S.~4\,ff.]{FlemingKoppelman2010}.
+Kostenplan aus der Planungsphase dient als unveränderter Basisplan\autocite[vgl.][S.~4\,ff.]{FlemingKoppelman2010}.
 
 \textbf{Überwachungsbalkenplan (ergänzend)}: Da im Team Mitarbeitende ohne
 Projektmanagementerfahrung vertreten sind, wird ein grafisch anschauliches
 Instrument benötigt. Der Überwachungsbalkenplan kann in der
 Projektstatusbesprechung direkt präsentiert werden und gibt allen Beteiligten
-intuitiv Auskunft darüber, welche Vorgänge im Plan liegen
-\parencite[vgl.][Kap.~3]{Mayer2014}.
+intuitiv Auskunft darüber, welche Vorgänge im Plan liegen\autocite[vgl.][Kap.~3]{Mayer2014}.
 
 \textbf{Meilenstein-Trendanalyse (für Berichterstattung an den Chef)}: Der Chef
 ist nicht operativ eingebunden; er benötigt eine verdichtete, interpretationsarme
@@ -379,7 +366,7 @@ MTA indirekt auch die Budgettreue wider.
 \textbf{Monatlicher Statusbericht}: Für die Berichterstattung gegenüber dem Chef
 wird ein kompakter, zielgruppengerechter Statusbericht empfohlen, der
 Kostenstand (Soll~vs.~Ist), Fertigstellungsgrad und Meilensteinstatus auf einer
-Seite zusammenfasst \parencite[vgl.][Kap.~3]{Mayer2014}.
+Seite zusammenfasst\autocite[vgl.][Kap.~3]{Mayer2014}.
 
 % ==============================================================================
 % KAPITEL 2 – Psychologie des Projektmanagements (20 Pkt.)
@@ -396,7 +383,7 @@ Seite zusammenfasst \parencite[vgl.][Kap.~3]{Mayer2014}.
 Unternehmen verfügen über eine gewachsene Aufbauorganisation (Linienorganisation),
 mit der sie routinemäßige Dauerprozesse effizient abwickeln. Diese Organisation
 ist jedoch auf Stabilität ausgelegt und kann auf neuartige, einmalige Vorhaben
-strukturell nicht angemessen reagieren \parencite[vgl.][Kap.~1]{Kiefer2010}.
+strukturell nicht angemessen reagieren\autocite[vgl.][Kap.~1]{Kiefer2010}.
 Das Studienheft FOI04 benennt acht Merkmale, die ein Projekt von der normalen
 Linienarbeit unterscheiden und damit die Notwendigkeit einer projektspezifischen
 Organisation begründen:
@@ -420,8 +407,7 @@ Organisation begründen:
       \item \textbf{Einmaligkeit}: Das Vorhaben wird nicht wiederholt; Routine
             entsteht nicht.
       \item \textbf{Risikobehaftetheit}: Möglichkeit des Scheiterns; in der Linie
-            werden bewährte Abläufe mit bekanntem Risiko ausgeführt
-            \parencite[vgl.][Kap.~1]{Kiefer2010}.
+            werden bewährte Abläufe mit bekanntem Risiko ausgeführt\autocite[vgl.][Kap.~1]{Kiefer2010}.
 \end{enumerate}
 
 \subsection{Relevanz für das Fallbeispiel}
@@ -448,8 +434,7 @@ besitzt, im Projekt aber koordinierende Steuerungsfunktionen ausüben muss. Die
 die \textbf{Einmaligkeit} des Vorhabens liegen auf der Hand. Das \textbf{Risiko
       des Scheiterns} -- etwa durch mangelnde Nutzerakzeptanz, Budgetüberschreitung oder
 Fehlanpassung der Software -- ist signifikant; es zählt zu den Hauptgründen, weshalb
-Digitalisierungsprojekte in KMU scheitern
-\parencite[vgl.][]{MittelstandDigital2019}.
+Digitalisierungsprojekte in KMU scheitern\autocite[vgl.][]{MittelstandDigital2019}.
 
 Besonders relevant im Fallbeispiel sind die \textbf{interdisziplinäre
       Aufgabenstellung} (externe Expertise unabdingbar), die
@@ -467,12 +452,11 @@ Rein verbal geprägte Kommunikation unterliegt strukturellen Schwächen: Sie
 erfordert hohe Konzentration bei raschen Ermüdungserscheinungen, erlaubt immer
 nur einer Person zu sprechen (oft von einzelnen Personen dominiert), vernachlässigt
 die Komplexität des Kommunikationsgeflechts in einem Projektteam und verliert
-besonders bei Unterbrechungen den roten Faden
-\parencite[vgl.][Kap.~2]{Kiefer2010}.
+besonders bei Unterbrechungen den roten Faden\autocite[vgl.][Kap.~2]{Kiefer2010}.
 
 Visualisierung -- der Einsatz optischer Zeichen und Darstellungen --
 verbessert die Kommunikation in allen Projektphasen. Das Studienheft FOI04
-benennt drei Hauptvorteile \parencite[vgl.][Kap.~2]{Kiefer2010}:
+benennt drei Hauptvorteile\autocite[vgl.][Kap.~2]{Kiefer2010}:
 
 \textbf{Verbesserung der Verständigung}: Visualisierung erhöht die
 Aufnahmekapazität, erhält die Aufnahmebereitschaft länger und entlastet die
@@ -486,19 +470,17 @@ ernst genommen und akzeptiert.
 \textbf{Verbesserung der Kreativität}: Gelungene optische Darstellungen regen den
 Gedankenfluss an, da sie den bildhaften Gehirnbereich ansprechen, in dem das
 blitzartige Verknüpfen von Informationen stattfindet. Visualisierungstechniken
-sind daher ein unverzichtbares Instrument zur Nutzung kreativer Potenziale
-\parencite[vgl.][Kap.~2]{Kiefer2010}.
+sind daher ein unverzichtbares Instrument zur Nutzung kreativer Potenziale\autocite[vgl.][Kap.~2]{Kiefer2010}.
 
 Als wesentlicher \textbf{Nachteil} gilt: Schlechte oder überdimensionierte
 Visualisierungen drängen den Inhalt in den Hintergrund und erzeugen kognitive
 Überlastung. Das Studienheft formuliert als Grundregel: Nie nachlässig oder
 übertrieben visualisieren -- Visualisierungen sollen den Inhalt verdeutlichen
-und nicht überlagern \parencite[vgl.][Kap.~2]{Kiefer2010}.
+und nicht überlagern\autocite[vgl.][Kap.~2]{Kiefer2010}.
 
 \subsection{Geeignete Medien und Auswahl für dieses Projekt}
 
-Das Studienheft FOI04 beschreibt mehrere Medien mit je eigenen Stärken und
-Schwächen \parencite[vgl.][Kap.~2]{Kiefer2010}:
+Das Studienheft FOI04 beschreibt mehrere Medien mit je eigenen Schwächen\autocite[vgl.][Kap.~2]{Kiefer2010}:
 
 \textbf{Kreide-/Whiteboard}: Leicht handhabbar, aktivierend, jederzeit
 veränderbar; \textit{Nachteil}: Kein Dokumentationsoutput.
@@ -521,8 +503,7 @@ Für dieses Projekt wird die Kombination aus \textbf{Flipchart/Metaplantafel und
       Beamer} empfohlen. Das Team besteht aus Personen unterschiedlicher
 Digitalaffinität und Projekterfahrung. Eine rein beamerbetriebene Präsentation
 würde das Beteiligungsgefühl mindern -- das Studienheft FOI04 warnt
-ausdrücklich, dass ein Beamer \enquote{nicht sehr aktivierend} wirkt
-\parencite[vgl.][Kap.~2]{Kiefer2010}. Flipcharts und Metaplantafeln hingegen
+ausdrücklich, dass ein Beamer \enquote{nicht sehr aktivierend} wirkt\autocite[vgl.][Kap.~2]{Kiefer2010}. Flipcharts und Metaplantafeln hingegen
 ermöglichen allen Beteiligten, Kärtchen beizusteuern und Ideen sichtbar zu
 machen -- gerade für die Akzeptanzförderung gegenüber Skeptikern im Team ein
 entscheidender Faktor.
@@ -533,8 +514,7 @@ Der Beamer eignet sich ergänzend für die Darstellung von Planungsdaten
 Zur Steigerung der Besprechungsqualität sind die Grundregeln effektiver
 Projektmeetings einzuhalten: Tagesordnung vorab verteilen, Zeitrahmen
 definieren, Protokoll mit konkreten Maßnahmen und Verantwortlichen führen,
-und jede Besprechung mit einer kurzen Reflexion abschließen
-\parencite[vgl.][Kap.~2]{Kiefer2010}.
+und jede Besprechung mit einer kurzen Reflexion abschließen\autocite[vgl.][Kap.~2]{Kiefer2010}.
 
 % ==============================================================================
 % KAPITEL 3 – Agiles Projektmanagement (40 Pkt.)
@@ -548,8 +528,7 @@ und jede Besprechung mit einer kurzen Reflexion abschließen
 
 \subsection{Vor- und Nachteile des klassischen Ansatzes}
 
-Das klassische Projektmanagement folgt einem sequenziellen Phasenmodell
-\parencite[vgl.][Kap.~2]{Mayer2014}: Auf Problemanalyse und Konzeption folgen
+Das klassische Projektmanagement folgt einem sequenziellen Phasenmodell\autocite[vgl.][Kap.~2]{Mayer2014}: Auf Problemanalyse und Konzeption folgen
 Planung, Realisierung und Abschluss. Ziel, Kosten, Termin und Leistungsumfang
 werden zu Beginn weitestgehend vollständig im Lastenheft und Pflichtenheft
 festgelegt; die Steuerung erfolgt über PSP, Balkenplan, Kostenplan und EVA.
@@ -558,40 +537,35 @@ festgelegt; die Steuerung erfolgt über PSP, Balkenplan, Kostenplan und EVA.
 zu Beginn; tiefe Nachvollziehbarkeit durch Lastenheft, Pflichtenheft, PSP und
 Berichte; bewährter Ansatz bei klarem Projektziel und verfügbarer Erfahrungsbasis
 aus vergleichbaren Vorhaben; eindeutige Rollenverteilung und
-Kostenverantwortung \parencite[vgl.][Kap.~2]{Mayer2014}.
+Kostenverantwortung\autocite[vgl.][Kap.~2]{Mayer2014}.
 
 \textbf{Nachteile:} Geringe Flexibilität gegenüber Änderungen; Ergebnisse sind dem
 Auftraggeber erst am Ende vollständig sichtbar, was Fehlentwicklungen spät sichtbar
 macht; hoher initialer Planungsaufwand. Das Studienheft ITPT01-H verweist auf die
 historische Problematik langer Projektlaufzeiten, in denen Kunden erst am Ende
-Ergebnisse sahen -- verbunden mit enttäuschenden Resultaten und langen Vertragsverhandlungen \parencite[vgl.][Kap.~1]{Reppin2020}.
+Ergebnisse sahen -- verbunden mit enttäuschenden Resultaten und langen Vertragsverhandlungen\autocite[vgl.][Kap.~1]{Reppin2020}.
 
 \subsection{Vor- und Nachteile des agilen Ansatzes}
 
 Agiles Projektmanagement stellt immaterielle Werte in den Vordergrund: Menschen,
 Kommunikation, Flexibilität und Transparenz. Veränderungen werden als integraler
-Bestandteil der Projektarbeit begriffen, nicht als Störung
-\parencite[vgl.][Kap.~1]{Reppin2020}. Die vier Wertepaare des Agilen Manifests lauten:
+Bestandteil der Projektarbeit begriffen, nicht als Störung\autocite[vgl.][Kap.~1]{Reppin2020}. Die vier Wertepaare des Agilen Manifests lauten:
 \textit{Individuen und Interaktionen} mehr als Prozesse und Werkzeuge;
 \textit{funktionierende Software} mehr als umfassende Dokumentation;
 \textit{Zusammenarbeit mit dem Kunden} mehr als Vertragsverhandlung;
-\textit{Reagieren auf Veränderung} mehr als das Befolgen eines Plans
-\parencite[vgl.][]{BeckEtAl2001a}.
+\textit{Reagieren auf Veränderung} mehr als das Befolgen eines Plans\autocite[vgl.][]{BeckEtAl2001a}.
 
 \textbf{Vorteile:} Hohe Anpassungsfähigkeit; frühe und regelmäßige Teilergebnisse
 ermöglichen kontinuierliches Kundenfeedback und frühzeitige Fehlererkennung;
 Selbstorganisation und Eigenverantwortung stärken Motivation und Qualität;
-kontinuierliche Verbesserung durch PDCA-Zyklen und Retrospektiven
-\parencite[vgl.][Kap.~1]{Reppin2020}.
+kontinuierliche Verbesserung durch PDCA-Zyklen und Retrospektiven\autocite[vgl.][Kap.~1]{Reppin2020}.
 
 \textbf{Nachteile:} Geringer Planungshorizont; Gesamtbudget und Liefertermin sind
 schwer zu fixieren; setzt intensive Kundenbeteiligung und hohe Verfügbarkeit
 des Product Owners voraus; erfordert agile Erfahrung im Team; kann auf
-Unverständnis in klassischen Organisationen stoßen
-\parencite[vgl.][Kap.~1]{Reppin2020}. Die Komus-Studie zeigt, dass agile Methoden
+Unverständnis in klassischen Organisationen stoßen\autocite[vgl.][Kap.~1]{Reppin2020}. Die Komus-Studie zeigt, dass agile Methoden
 zwar in fast allen Disziplinen besser abschneiden als klassische Praktiken, der
-Anpassungsaufwand bei erstmaliger Einführung aber erheblich ist
-\parencite[vgl.][]{Komus2015}.
+Anpassungsaufwand bei erstmaliger Einführung aber erheblich ist\autocite[vgl.][]{Komus2015}.
 
 \subsection{Entscheidung für das Tischlerei-Projekt}
 
@@ -606,7 +580,7 @@ erhebbar.
 \textit{Teamzusammensetzung}: Das Team besteht aus Handwerkspersonal und
 Verwaltungsmitarbeitenden ohne Vorerfahrung in agilen Methoden. Das Studienheft
 ITPT01-H betont, dass agile Selbstorganisation und Eigenverantwortung hohe
-Anforderungen an das Team stellen \parencite[vgl.][Kap.~1]{Reppin2020}, die
+Anforderungen an das Team stellen\autocite[vgl.][Kap.~1]{Reppin2020}, die
 im laufenden Betrieb eines kleinen Handwerksunternehmens schwer zu erfüllen sind.
 
 \textit{Expliziter Budgetfokus}: Klassisches Projektmanagement bietet mit
@@ -615,8 +589,7 @@ agilen Ansatz in dieser Form nicht vorgesehen sind.
 
 \textit{Hybrides Denken}: Elemente agilen Denkens -- offene Feedbackkultur,
 Retrospektiven nach Phasenabschlüssen, iterative Feinabstimmung in der
-Schulungsphase -- können sinnvoll in den klassischen Rahmen integriert werden
-\parencite[vgl.][Kap.~6]{Reppin2020}.
+Schulungsphase -- können sinnvoll in den klassischen Rahmen integriert werden\autocite[vgl.][Kap.~6]{Reppin2020}.
 
 \textit{Implementierungsprozesse der externen Softwarefirma}: Es ist davon auszugehen, dass die externe Softwarefirma bereits häufiger Anpassungen an ihrem Produkt vorgenommen hat, weshalb auf Seite der Firma angenommen werden kann, dass es zumindest einen Teilstandardisierten (linienförmigen) Prozess gibt.
 
@@ -629,25 +602,21 @@ Schulungsphase -- können sinnvoll in den klassischen Rahmen integriert werden
 
 Scrum ist ein Framework für agiles Projektmanagement, das Regeln und Rollen definiert, in dem ein Projektteam
 sich iterativ dem Projektziel annähert und in jeder Iteration auslieferungsfähige
-Teilprodukte (Inkremente) erzeugt
-\parencite[vgl.][Kap.~3]{Reppin2020}. Der Scrum Guide 2020 definiert
-Scrum als \enquote{überschaubares Framework das Menschen, Teams und Organisationen dabei hilft Lösungen für komplexe Probleme zu finden und damit Wert zu stiften.} \parencite[vgl.][]{SutherlandSchwaber2020}.
+Teilprodukte (Inkremente) erzeugt\autocite[vgl.][Kap.~3]{Reppin2020}. Der Scrum Guide 2020 definiert
+Scrum als \enquote{überschaubares Framework das Menschen, Teams und Organisationen dabei hilft Lösungen für komplexe Probleme zu finden und damit Wert zu stiften.}\autocite[vgl.][]{SutherlandSchwaber2020}.
 
 \paragraph{Rollen}
 \begin{itemize}[noitemsep]
       \item \textbf{Scrum Master}: Agiler Projektmanager; vermittelt dem Team Scrum
             in Theorie und Praxis; organisiert und moderiert die Scrum Events;
             räumt Impediments aus dem Weg; pflegt das Impediment-Backlog; befähigt das
-            Team zur Selbstorganisation und schützt es vor externen Störungen
-            \parencite[vgl.][Kap.~3]{Reppin2020}.
+            Team zur Selbstorganisation und schützt es vor externe Störungen\autocite[vgl.][Kap.~3]{Reppin2020}.
       \item \textbf{Product Owner}: Verantwortet Produkt, Budget und Kommunikation
             mit Auftraggeber und Stakeholdern; erstellt und pflegt das Product Backlog;
             vermittelt dem Team eine klare Produktvision; sollte möglichst vollständig
-            im Projektraum präsent sein
-            \parencite[vgl.][Kap.~3]{Reppin2020}.
+            im Projektraum präsent sein\autocite[vgl.][Kap.~3]{Reppin2020}.
       \item \textbf{Scrum Team}: Cross-funktional; 7--9 Personen; alle benötigten
-            Fachkenntnisse im Team vertreten; alle Mitglieder gleichgestellt ohne
-            formale Hierarchie \parencite[vgl.][Kap.~3]{Reppin2020}.
+            Fachkenntnisse im Team vertreten; alle Mitglieder gleichgestellt ohne formale Hierarchie\autocite[vgl.][Kap.~3]{Reppin2020}.
 \end{itemize}
 
 \paragraph{Artefakte}
@@ -667,15 +636,14 @@ Scrum als \enquote{überschaubares Framework das Menschen, Teams und Organisatio
             Scrum kennen; Rahmenbedingungen werden besprochen.
       \item \textbf{Sprint Planning}: Gemeinsame Festlegung der User Stories und
             Reihenfolge für den nächsten Sprint; Aufwandsschätzung in Story Points
-            (modifizierte Fibonacci-Folge: 1, 2, 3, 5, 8, 13, \dots)
-            \parencite[vgl.][Kap.~3]{Reppin2020}.
+            (modifizierte Fibonacci-Folge: 1, 2, 3, 5, 8, 13, \dots)\autocite[vgl.][Kap.~3]{Reppin2020}.
       \item \textbf{Daily Scrum}: Tägliches 15-minütiges Standup; Was wurde erledigt?
             Was ist heute geplant? Gibt es Impediments?
       \item \textbf{Review}: Präsentation fertiggestellter User Stories an alle
             Stakeholder am Sprintende; direktes Feedback.
       \item \textbf{Retrospektive}: Vertrauliche Reflexion des vergangenen Sprints;
             maximal 1--2 Verbesserungen für den nächsten Sprint vereinbaren;
-            Timebox: ca.\ 60~Minuten \parencite[vgl.][Kap.~3]{Reppin2020}.
+            Timebox: ca.\ 60~Minuten\autocite[vgl.][Kap.~3]{Reppin2020}.
       \item \textbf{Release}: Product Owner entscheidet, wann welche Inkremente
             ausgeliefert werden; Release-Plan wird laufend aktualisiert.
 \end{itemize}
@@ -715,8 +683,7 @@ Werkstattmitarbeiter, dem externen Softwareentwickler sowie ggf. dem Chef
 \paragraph{Sprintplanung und Release-Plan}
 
 Bei einer Sprintlänge von zwei Wochen und einer geschätzten Team-Velocity von
-ca.\ 15--18 Story Points pro Sprint ergibt sich folgender grober Ablauf
-\parencite[vgl.][Kap.~3]{Reppin2020}:
+ca.\ 15--18 Story Points pro Sprint ergibt sich folgender grober Ablauf\autocite[vgl.][Kap.~3]{Reppin2020}:
 
 \begin{longtable}{@{}p{0.10\linewidth}p{0.35\linewidth}p{0.18\linewidth}p{0.27\linewidth}@{}}
       \toprule
@@ -733,8 +700,7 @@ ca.\ 15--18 Story Points pro Sprint ergibt sich folgender grober Ablauf
 \end{longtable}
 
 Jeder Sprint beginnt mit dem Sprint Planning, wird täglich durch das Daily Scrum
-koordiniert und endet mit Review und Retrospektive
-\parencite[vgl.][Kap.~3]{Reppin2020}. Das Product Backlog wird nach jeder Iteration
+koordiniert und endet mit Review und Retrospektive\autocite[vgl.][Kap.~3]{Reppin2020}. Das Product Backlog wird nach jeder Iteration
 durch den Product Owner verfeinert (Backlog Grooming). Der Release-Plan wird
 laufend aktualisiert und dem Chef nach jedem Review als kompakter Statusbericht
 zugeleitet.
@@ -743,14 +709,12 @@ zugeleitet.
 % 3c) Verteiltes Team und Kommunikation (10 Pkt.)
 % ------------------------------------------------------------------------------
 \section{Kommunikation im verteilten Projektteam}
-
 \subsection{Technische Mittel}
 
 Das Studienheft ITPT01-H beschreibt verteilte Teams als Teams, deren Mitglieder
 nicht am selben Ort arbeiten, und bezeichnet dies im agilen Kontext als besondere
 Herausforderung: Die empfohlene enge Zusammenarbeit in agilen Teams zu
-gewährleisten, bringt Personen und Technik oft an ihre Grenzen
-\parencite[vgl.][Kap.~5]{Reppin2020}. \textcite{Radigan2023} (Atlassian) betont,
+gewährleisten, bringt Personen und Technik oft an ihre Grenzen\autocite[vgl.][Kap.~5]{Reppin2020}. Radigan\autocite{Radigan2023} (Atlassian) betont,
 dass verteilte Scrum-Teams mit der richtigen Kombination aus Werkzeugen,
 Strukturen und Vertrauensaufbau ebenso effektiv arbeiten können wie
 co-lokalisierte Teams.
@@ -761,21 +725,19 @@ technische Mittel empfohlen:
 
 \textbf{Videokonferenz-Werkzeuge} (z.\,B. Zoom, Microsoft Teams): Ermöglichen
 Kommunikation von Angesicht zu Angesicht -- das effektivste Mittel der
-Informationsvermittlung laut Agilen Manifest \parencite[vgl.][]{BeckEtAl2001b}.
+Informationsvermittlung laut Agilen Manifest\autocite[vgl.][]{BeckEtAl2001b}.
 Einsatz für Sprint Planning, Reviews, Retrospektiven und ad-hoc-Abstimmungen.
 Wichtig: Video-Calls sollten nicht nur für geplante Termine, sondern auch
-für spontane Kurzabstimmungen genutzt werden
-\parencite[vgl.][]{Radigan2023}.
+für spontane Kurzabstimmungen genutzt werden\autocite[vgl.][]{Radigan2023}.
 
 \textbf{Digitales Aufgaben- und Projekttool} (z.\,B. Jira, Trello): Ermöglicht ein
 standortunabhängig einsehbares, digitales Scrum Board -- die Grundvoraussetzung
-für Transparenz in verteilten Teams \parencite[vgl.][Kap.~5]{Reppin2020}.
+für Transparenz in verteilten Teams\autocite[vgl.][Kap.~5]{Reppin2020}.
 
 \textbf{Instant-Messaging-Plattform} (z.\,B. Slack, Microsoft Teams): Schafft
 informelle Kommunikationskanäle für schnelle Fragen, die per E-Mail zu schwerfällig
 wären. Strukturierte Kanäle (z.\,B. \texttt{\#general}, \texttt{\#impediments},
-\texttt{\#daily}) erleichtern die Nachvollziehbarkeit
-\parencite[vgl.][]{Radigan2023}.
+\texttt{\#daily}) erleichtern die Nachvollziehbarkeit\autocite[vgl.][]{Radigan2023}.
 
 \textbf{Cloud-basiertes Dokumentenmanagement} (z.\,B. SharePoint, Google Drive,
 Confluence): Stellt sicher, dass Lastenheft, Pflichtenheft, Backlog und
@@ -783,11 +745,11 @@ Sprint-Protokolle für alle Beteiligten stets aktuell und zentral zugänglich si
 
 \subsection{Besonders wichtige Aspekte der Zusammenarbeit}
 
+\label{sec:Projektstart}
 \textbf{Persönlicher Projektstart (Kick-off vor Ort)}: Das Studienheft ITPT01-H
 benennt als zentralen Erfolgsfaktor, dass sich Teammitglieder auch über die
 Distanz gut kennenlernen, sodass Vertrauen entstehen kann -- im besten Fall
-durch ein gemeinsames Treffen zu Beginn
-\parencite[vgl.][Kap.~5]{Reppin2020}. \textcite{Radigan2023} bestätigt: Persönliche
+durch ein gemeinsames Treffen zu Beginn\autocite[vgl.][Kap.~5]{Reppin2020}. Radigan\autocite{Radigan2023} bestätigt: Persönliche
 Verbindungen reduzieren Missverständnisse, erleichtern Selbstorganisation und
 erhöhen die Moral im Team. Für die Tischlerei bedeutet das: Kundenbetreuer
 und Softwareentwickler sollten zum Kick-off persönlich anreisen und die
@@ -795,16 +757,14 @@ Tischlerei kennenlernen.
 
 \textbf{Aktives Informationsmanagement}: Das Studienheft FOI04 betont, dass
 aktives Informationsmanagement Aufgabe der Projektleitung ist -- die Beteiligten
-haben kaum Zeit, sich relevante Informationen selbst zu beschaffen
-\parencite[vgl.][Kap.~2]{Kiefer2010}. Für ein verteiltes Team gilt dies in
+haben kaum Zeit, sich relevante Informationen selbst zu beschaffen\autocite[vgl.][Kap.~2]{Kiefer2010}. Für ein verteiltes Team gilt dies in
 verstärktem Maß: Der Meister als Product Owner muss klare Regeln definieren,
 welche Informationen über welchen Kanal fließen (synchron vs.\ asynchron).
 
 \textbf{Strukturierte, regelmäßige Meetings}: Eine verlässliche Meetingstruktur
 ist in verteilten Teams besonders wichtig, da der informelle Austausch entfällt.
 Anlehnen an das Daily Scrum -- kurze, tägliche Standup-Meetings (15~min) -- hält
-den Arbeitsfortschritt transparent und Impediments sichtbar
-\parencite[vgl.][Kap.~5]{Reppin2020}.
+den Arbeitsfortschritt transparent und Impediments sichtbar\autocite[vgl.][Kap.~5]{Reppin2020}.
 
 \textbf{Domänenwissen-Transfer}: Da die externen Softwarevertreter vmtl. nur wenig
 Handwerkswissen mitbringen, muss der Meister als Übersetzer zwischen
@@ -813,7 +773,7 @@ klares Lastenheft sind dabei die wichtigsten Kommunikationsmittel.
 
 \textbf{Informelle Verbindung}: Gerade in verteilten Teams entfällt die
 informelle Kommunikation, die in einem gemeinsamen Projektraum selbstverständlich
-entsteht. \textcite{Radigan2023} empfiehlt daher virtuelle Kurzgespräche,
+entsteht. Radigan\autocite{Radigan2023} empfiehlt daher virtuelle Kurzgespräche,
 wöchentliche 1:1-Videocalls und gemeinsame Onboarding-Formate (z.\,B. kurze
 persönliche Vorstellungsrunden am Projektstart), um Vertrauen und Teamgefühl
 auch über die Distanz zu stärken.
@@ -825,30 +785,23 @@ Auch wenn das Fallbeispiel nicht detalliert genug schildert welche speziellen
 Herausforderungen das Projekt birgt wurden Annahmen getroffen um eventuelle Risiken
 zu behandeln und die projektspezifischen Herausforderungen einzuordnen.
 
-\section{Anpassung auf eigene Bedürfnisse}
+\section{Elemente des Domain Driven Designs integrieren}
 Aufgrund der Konstellation der Projektmitwirkenden, die alle unterschiedliche Expertisen
 mit in das Vorhaben bringen ist es ratsam sich einiger Elemente des \textit{Domain-Driven-Designs (DDD)}
 zu bedienen. DDD ist für die Gestaltung komplexer Softwarearchitektur konzipiert worden. Auch wenn das
-Tischlerei-Projekt nicht in dieses Muster fällt ist es sinnvoll die folgenden drei Elemente des DDD zu kennen
+Tischlerei-Projekt nicht genau in dieses Muster fällt ist es sinnvoll die folgenden beiden Elemente des DDD zu kennen
 und ggf. in die Projektumsetzung einzubauen:
 
 \textbf{Ubiquitous Language}: Aufgrund der verschiedenen Domänen-Inhaber:innen in Verwaltung, Handwerk und
-Softwareentwicklung verwenden die Mitwirkenden alle ihren eigenen expertisebezogenen Jargon \parencite[s.][25]{DDDEvans2003}. Infolgedessen entstehen
-Verständnisprobleme. Besprechungen dauern länger und führen häufig nicht zum erwünschten Ergebnis. Das Projekt gerät
+Softwareentwicklung verwenden die Mitwirkenden alle ihren eigenen expertisebezogenen Jargon\autocite[s.][25]{DDDEvans2003}. Infolgedessen entstehen
+Verständnisprobleme. Besprechungen dauern länger und führen häufig nicht zum gewünschten Ergebnis. Das Projekt gerät
 in Verzug, was ein Risiko darstellt. Um dem entgegenzuwirken Empfiehlt es sich eine gemeinsame Einheitssprache zu
-entwickeln.
+entwickeln. So muss der Meister nicht länger als Übersetzer fungieren und Kommunikationswege wären direkter \autocite[vgl.][Kap.~3. Direkte Kommunikationswege werden ermöglicht und wiederholte Erklärungen ausgeschlossen. Außerdem wird durch eine gemeinsame Sprache ermöglicht die richtige Botschaft zu formulieren.]{Kiefer2010}.
 
-\textbf{Event Storming}: Ein passender Weg, um die \textit{Ubiquitous Language} zu entwickeln stellt das sog.
-\textit{Event Storming} dar, welches von \textcite{Brandolini2025} im Jahr 2013 erfunden wurde.
-
-Dennoch  Es ist empfehlenswert zu Beginn des Projekts ein
+\textbf{EventStorming}: Ein passender Weg, um die \textit{Ubiquitous Language} zu entwickeln stellt das sog.
+\textit{EventStorming} dar, welches von Alberto Brandolini im Jahr 2013\footnote{vgl. dazu \citeauthor{Brandolini2025}.} erfunden wurde. Dabei werden im Rahmen eines sog. \textit{Big Picture Workshops} Betriebsabläufe sichtbar gemacht. Ereignisse werden aufgeschrieben, gruppiert und sortiert. Dabei entsteht eine einheitliche Sprache und ein gemeinsames Verständnis der Abläufe in der Tischlerei kann etabliert werden \autocite[vgl.][Da Brandolinis Buch erst zu 70~\% (Stand August 2021) fertiggestellt ist, wird auf eine Zusammenfassung der Vorversion zurückgegriffen]{Kejeiri2020}. Ein solcher Workshop könnte ideal im Rahmen des \hyperref[sec:Projektstart]{persönlichen Kick-off Termins stattfinden}.
 
 \section{Fazit}
-Die Einführung einer Software in der Tischlerei wurde aus mehreren Blickwinkeln betrachtet.
-Zunächst wurde festgestellt, dass die Einführung einer Software in der Tischlerei alle notwendigen
-Charakteristiken eines Projekts mit sich bringt. Nachdem bereits eine Entscheidung für eine Software
-gefallen ist, muss eigentlich vorab eine Bestandsaufnahme (Lastenheft) erfolgt sein. Als
-Es ist festzuhalten, dass das Projekt typische Herausforderungen und Risiken mit sich bringt.
 
 
 % ==============================================================================
