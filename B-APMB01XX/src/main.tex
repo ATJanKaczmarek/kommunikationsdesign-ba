@@ -335,7 +335,7 @@ Meilensteinpunkt signalisiert Verzug und erlaubt frühzeitige Steuerungsmaßnahm
 Die Projektberichterstattung versorgt alle Beteiligten zielgruppengerecht mit
 Informationen\autocite[vgl.][Kap.~3]{Mayer2014}. Die Projektstatusbesprechung
 ist das operative Koordinationsinstrument: Ist-Daten zu Terminen, Kosten und
-Technik werden gemeinsam ausgewertet, und Maßnahmen werden beschlossen.
+Technik werden gemeinsam ausgewertet und Maßnahmen werden beschlossen.
 
 \subsection{Geeignete Methoden unter Berücksichtigung des Budgetfokus}
 
@@ -709,7 +709,7 @@ zugeleitet.
 \subsection{Technische Mittel}
 
 Das Studienheft ITPT01-H beschreibt verteilte Teams als Teams, deren Mitglieder
-nicht am selben Ort arbeiten, und bezeichnet dies im agilen Kontext als besondere
+nicht am selben Ort arbeiten und bezeichnet dies im agilen Kontext als besondere
 Herausforderung: Die empfohlene enge Zusammenarbeit in agilen Teams zu
 gewährleisten, bringt Personen und Technik oft an ihre Grenzen\autocite[vgl.][Kap.~5]{Reppin2020}. Radigan\autocite{Radigan2023} (Atlassian) betont,
 dass verteilte Scrum-Teams mit der richtigen Kombination aus Werkzeugen,
@@ -726,8 +726,9 @@ Informationsvermittlung laut Agilen Manifest\autocite[vgl.][]{BeckEtAl2001b}.
 Einsatz für Sprint Planning, Reviews, Retrospektiven und ad-hoc-Abstimmungen.
 Wichtig: Video-Calls sollten nicht nur für geplante Termine, sondern auch
 für spontane Kurzabstimmungen genutzt werden\autocite[vgl.][]{Radigan2023}.
+Zudem verfügen fast alle Videokonferenz-Werkzeuge über die Möglichkeit Aufzeichnungen und Transkripte der Videotelefonate zu erstellen und diese im Anschluss mithilfe von künstlicher Intelligenz zusammenzufassen sowie Aufgaben (Action-Points) zu definieren. In Kombination mit einem geeigneten Projekttool können Aufgaben direkt aus Gesprächen übertragen werden.
 
-\textbf{Digitales Aufgaben- und Projekttool} (z.\,B. Jira, Trello): Ermöglicht ein
+\textbf{Digitales Aufgaben- und Projekttool} (z.\,B. Jira, Trello, ClickUp): Ermöglicht ein
 standortunabhängig einsehbares, digitales Scrum Board -- die Grundvoraussetzung
 für Transparenz in verteilten Teams\autocite[vgl.][Kap.~5]{Reppin2020}.
 
@@ -739,6 +740,12 @@ wären. Strukturierte Kanäle (z.\,B. \texttt{\#general}, \texttt{\#impediments}
 \textbf{Cloud-basiertes Dokumentenmanagement} (z.\,B. SharePoint, Google Drive,
 Confluence): Stellt sicher, dass Lastenheft, Pflichtenheft, Backlog und
 Sprint-Protokolle für alle Beteiligten stets aktuell und zentral zugänglich sind.
+
+\textbf{Anzahl der Tools klein halten}: Es sollte darauf geachtet werden möglichst wenige Werkzeuge zu verwenden.
+Zum einen verursacht die Lizensierung mehrerer Tools selbst Kosten. Zum Anderen muss darauf geachtet werden, dass
+Tools integriert werden können, um Daten mit möglichst geringem Zeitaufwand zwischen den Systemen zu bewegen.
+Zu viele Tools tragen außerdem zur Unübersichtlichkeit bei und stellen ein Risiko für die Kommunikation.
+
 
 \subsection{Besonders wichtige Aspekte der Zusammenarbeit}
 
@@ -798,8 +805,11 @@ entwickeln. So muss der Meister nicht länger als Übersetzer fungieren und Komm
 \textbf{EventStorming}: Ein passender Weg, um die \textit{Ubiquitous Language} zu entwickeln stellt das sog.
 \textit{EventStorming} dar, welches von Alberto Brandolini im Jahr 2013\footnote{vgl. dazu \citeauthor{Brandolini2025}.} erfunden wurde. Dabei werden im Rahmen eines sog. \textit{Big Picture Workshops} Betriebsabläufe sichtbar gemacht. Ereignisse werden aufgeschrieben, gruppiert und sortiert. Dabei entsteht eine einheitliche Sprache und ein gemeinsames Verständnis der Abläufe in der Tischlerei kann etabliert werden \autocite[vgl.][Da Brandolinis Buch erst zu 70~\% (Stand August 2021) fertiggestellt ist, wird auf eine Zusammenfassung der Vorversion zurückgegriffen]{Kejeiri2020}. Ein solcher Workshop könnte ideal im Rahmen des \hyperref[sec:Projektstart]{persönlichen Kick-off Termins stattfinden}.
 
+\section{Hybrider Ansatz}
+Die geeignetste Lösung für das Projekt wäre vermutlicht ein \textit{hybrider} Ansatz. Dabei wird sich (passend zum Projekt) verschiedener Projektmanagementmethoden aus mehreren Vorgehensweisen bedient. Die bereits erwähnten Elemente aus dem Domain Driven Design könnten zu einem Anforderungskatalog (ähnlich eines Lastenhefts) erwachsen. Mittels eines Kanban-Boards (z.\,B. Trello) kann der aktuelle Stand des Projekts erfasst werden und mit Meilensteinen aus einem Phasenplan abgeglichen werden. Da die Phasen unterschiedlich lang sind, empfiehlt sich das Arbeiten in Sprints eher nicht. Auch wenn Scrum zuvor als ungeeignet bezeichnet wurde, könnte sich der Daily Standups bedient werden. Auch User-Stories sind geeigent, um Aufgaben zu definieren und zu validieren.
+
 \section{Fazit}
-Grundsätzlich lässt sich aus dem Fallbeispiel nicht erschließen, ob es sich um eine Standardsoftware handelt oder ob der Integrationsaufwand (Anpassungen am Programm) hoch ist. Zudem ist unklar, ob es sich um eine Software speziell für Tischlereien bzw. Handwerksbetriebe handelt und ob die externe Firma domänenspezifisches Wissen mitbringt. Grundsätzlich birgt das Projekt einige Risiken. Zentral ist dabei die Affinität der Projektbeteiligeten im Hinblick auf digitale Produkte und nicht-linienförmige Abläufe.
+Grundsätzlich lässt sich aus dem Fallbeispiel nicht erschließen, ob es sich um eine Standardsoftware handelt oder ob der Integrationsaufwand (Anpassungen am Programm) hoch ist. Zudem ist unklar, ob es sich um eine Software speziell für Tischlereien bzw. Handwerksbetriebe handelt und ob die externe Firma domänenspezifisches Wissen mitbringt. Grundsätzlich birgt das Projekt einige Risiken. Zentral ist dabei die Affinität der Projektbeteiligeten im Hinblick auf digitale Produkte und nicht-linienförmige Abläufe. Auch wenn für die Entwicklung von Software agile Methoden gängig und gut geeignet sind und klassische Ansätze (Lasten-/Pflichtenheft) häufig nicht nach Plan verlaufen, liegt das Projekt aus dem Fallbeispiel in der Mitte. Die Software soll an die Anforderungen des Handwerksbetriebs angepasst werden, gleichzeitig ist davon auszugehen, dass die Angestellten der Tischlerei wenig Projekterfahrung mitbringen. Ein Hybrider Ansatz aus agilen und klassischen Methoden scheint am geeignetsten für das Vorhaben zu sein.
 
 
 % ==============================================================================
